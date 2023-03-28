@@ -1,0 +1,171 @@
+Delivered-To: mianmuhmmadusman@gmail.com
+Received: by 2002:a05:7108:7493:b0:2f1:ee24:b882 with SMTP id v19csp987218gds;
+        Mon, 27 Mar 2023 13:25:39 -0700 (PDT)
+X-Received: by 2002:a2e:9c94:0:b0:29c:44f1:c1df with SMTP id x20-20020a2e9c94000000b0029c44f1c1dfmr3766900lji.41.1679948739033;
+        Mon, 27 Mar 2023 13:25:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1679948739; cv=none;
+        d=google.com; s=arc-20160816;
+        b=sHUN1iyHugX/0AxEKb4eFl/uE7SAeO559tJEIOADdGk5OLlDt2glp8KtlMyrRAJEe4
+         YideWrClECQ6MwfP4zlTOnHtQr0klcsbUK46z3tzJ5rdoQbodRBGe2z4rMJwBcjRp/X7
+         yuloimw0ld73tZHLz6s+GnfpETxzYZ1XpAyiMtiuxDKFKGduyOBuPAlWnk50fx+09MrT
+         ZoDeSyj0R18EJIMaq3+NxpuzRjD8eVq3wEsVaFp84Ut351kochJ/S/IC8IYyxQwHT8S+
+         CVw3BeKLvS1b1Ws0o+0TcHU5SN8r4IKwd6arK/Irghj9AgZbtlWoKSFUW7tzrWlxv5jl
+         kqZQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=CHoekwsFxwP1MEnRrM5qakE+QKxyQxhgD95/FZLMGe4=;
+        b=ytmAEJb3y9SZrzgIPb2SdbIcdO4epui9UYIV44oDbIHax6E7trs1R7G5JmD1CYzx/I
+         cWuStmMiHWBjEJtqfQ8ELaBxMVWGYfoDf2evfcarRtJ0hG57fd1ToVlaAA7zROQUjTXa
+         DO0Ebvde+CYYopzbt2DRXeaqdHGNkJtxrrBbgBg20xJ9q8xbkNHyOyvjSr4/luimSOYD
+         tEx9Zl2Ohg0vQVzmr0BtVdY4PC173hTGvVFOCg7O7oDljmDrRcSLc09R46mWdWTzXFee
+         d3GL4Xg5w5sQfkJE+4xivSgOfmhmTP15uhqf1uGPJsfjUwS8hIpsLlVfVrRJQ71NaGUd
+         E6YA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=IJhlYoNR;
+       spf=pass (google.com: domain of celestinkanyam@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=celestinkanyam@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <celestinkanyam@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id n21-20020a2e8795000000b002957712cf4csor8856757lji.73.2023.03.27.13.25.38
+        for <mianmuhmmadusman@gmail.com>
+        (Google Transport Security);
+        Mon, 27 Mar 2023 13:25:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of celestinkanyam@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=IJhlYoNR;
+       spf=pass (google.com: domain of celestinkanyam@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=celestinkanyam@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112; t=1679948738;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=CHoekwsFxwP1MEnRrM5qakE+QKxyQxhgD95/FZLMGe4=;
+        b=IJhlYoNRMUUkbI9rskPISDsExSTT0g70y5Ll0voqPeSN0uf7e6cGKtMF/1YyjjNXNE
+         KV0suyMou/qYOPIBYKwGoow71oEvTGcH3lV6s3MLtAWfs9rgI0E+XQFOuD5Ocn4tznAv
+         d7zT02EYDPlyT9X02k2JpgTFoLhEOF658uRxATQjZkYsbKmEO2WKAqIc6UFfXV5gFL8A
+         J06lRr0GD6OX5v/WxojmSFrcb0RIolbDzbG7Hyz11Ho+/MNPOQ96Ou3x6aXgs61H0RfH
+         C78veopZjPLf619lZVANyYHYjmwxPniHEjtqC6EuRh+puTUzCXM3dHLykyP8otqpSMhP
+         6qnA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112; t=1679948738;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=CHoekwsFxwP1MEnRrM5qakE+QKxyQxhgD95/FZLMGe4=;
+        b=NjWucs/mW/hWKInlg3MQ9Bynv1OCc/L2+4j5pNXwg6709AjObZvFpryV0UTJM1D8s2
+         xj0pH/nAWeegeyGywD+mPDnJuhH8g3ZLy1yCab4bx1cs70flXlXrnBt5Opdg+qCcOQaK
+         2/jNwHWIZAMD63uRngiPEJZJ57wnfNxrBAdTwe688pzabQwmD1ZT6ne/okD82udVGwYX
+         YLbbJar6PpyCmkTgusbE5xeurq0BSwNjgc7069O9cCdfwXAXymEAlLuNtrPqVQWXekIv
+         Ol53Vy8cz48R+ILEk7c1Bb48dbqQAS06Z/6T1CP/JIDQU7zU454pnnIIF1Rbg1u/K90W
+         P33Q==
+X-Gm-Message-State: AAQBX9deLVCa/ihRNOJl4FiaYLRRfYGeiMpHeBrFemTpQpPxPZPi33zv
+	HpqKLKogEkR1m3v7Arjt4qdqnbNtfGIXKjjCkkR3FnRJqqNrcQM1/uk=
+X-Google-Smtp-Source: AKy350bcozIDgNdzzVXSMgSaNX99pFuZE3ZdP4kRuXViZUhaPmsF9W9gxxUIBTEi5tsKYqtcvDPIWOx61DMMvrH93+U=
+X-Received: by 2002:a2e:9c19:0:b0:2a2:ab76:c367 with SMTP id
+ s25-20020a2e9c19000000b002a2ab76c367mr3876015lji.6.1679948737815; Mon, 27 Mar
+ 2023 13:25:37 -0700 (PDT)
+MIME-Version: 1.0
+From: Kanyama Celestin <celestinkanyam@gmail.com>
+Date: Mon, 27 Mar 2023 23:25:26 +0300
+Message-ID: <CAGz7tLew7jjZaO1-m1oTY076UPq7GhVZjPmS3Gw5zPRutdPzAw@mail.gmail.com>
+Subject: We'll be in touch with you soon {{.Name}}
+To: mianmuhmmadusman@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000c22dd905f7e78bc4"
+
+--000000000000c22dd905f7e78bc4
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+             Private Investigator Free Consultation (24hrs)
+
+Thank you for your interest in our investigations and for taking the time
+to request a free consultation. Together we will create an action plan for
+your circumstance and proceed with the urgency your case requires.
+
+If you have a specific time that you wish for me to call or prefer to
+communicate via email, please respond to this email to let me know. Please
+note that if you requested to have a discreet contact, I will be calling
+you from a blocked number to maintain additional confidentiality.
+
+If you have any additional information you wish to provide prior to our
+phone call, you may reply to this email at any time. Thank you and I look
+forward to speaking with you.
+Do you mind a WhatsApp chat
+=E2=9C=94 Yes, close my request <http://linktowhatapp.com> =E2=9C=98 No
+<http://linktowhatapp.com>
+
+--000000000000c22dd905f7e78bc4
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p style=3D"color:rgb(68,68,68);font-family:&quot;Lucida G=
+rande&quot;,Verdana,Arial,sans-serif;font-size:12px"><br></p><table bgcolor=
+=3D"#f3f3f3" style=3D"color:rgb(68,68,68);font-size:12px;font-family:&quot;=
+system-ui&quot;,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Robot=
+o,Oxygen-Sans,Ubuntu,Cantarell,&quot;Helvetica Neue&quot;,Arial,&quot;sans-=
+serif&quot;;width:720px;max-width:720px;border-collapse:collapse"><tbody><t=
+r><td colspan=3D"6" height=3D"40" style=3D"border-collapse:collapse">=C2=A0=
+ =C2=A0</td></tr><tr><td style=3D"border-collapse:collapse;width:34px;min-w=
+idth:10px"></td><td bgcolor=3D"white" style=3D"border-collapse:collapse;wid=
+th:23.1875px;min-width:10px"></td><td bgcolor=3D"white" style=3D"border-col=
+lapse:collapse;width:18px;padding:40px 12px 0px 0px;border-bottom:1px solid=
+ rgb(221,221,221);vertical-align:top"><img src=3D"https://static.zdassets.c=
+om/classic/images/icons/article.png" class=3D"gmail-CToWUd" style=3D"vertic=
+al-align: middle;">=C2=A0=C2=A0</td><td bgcolor=3D"white" style=3D"border-c=
+ollapse:collapse;font-family:&quot;system-ui&quot;,-apple-system,BlinkMacSy=
+stemFont,&quot;Segoe UI&quot;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&quot;Hel=
+vetica Neue&quot;,Arial,&quot;sans-serif&quot;;font-size:18px;line-height:2=
+0px;padding:40px 0px 20px;border-bottom:1px solid rgb(221,221,221);vertical=
+-align:middle"><span style=3D"color:rgb(51,51,51)">=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 </span><font color=3D"#ff0000">Private Investigator Free Consult=
+ation (24hrs)</font></td><td bgcolor=3D"white" style=3D"border-collapse:col=
+lapse;width:23.1875px;min-width:10px"></td><td style=3D"border-collapse:col=
+lapse;width:34px;min-width:10px"></td></tr><tr><td style=3D"border-collapse=
+:collapse;width:34px;min-width:10px"></td><td bgcolor=3D"white" style=3D"bo=
+rder-collapse:collapse;width:23.1875px;min-width:10px"></td><td colspan=3D"=
+2" bgcolor=3D"white" style=3D"border-collapse:collapse;padding:25px 0px;bor=
+der-bottom:1px solid rgb(221,221,221)"><p>Thank you for your interest in ou=
+r investigations and for taking the time to request a free consultation. To=
+gether we will create an action plan for your circumstance and proceed with=
+ the urgency your case requires.</p><p>If you have a specific time that you=
+ wish for me to call or prefer to communicate via email, please respond to =
+this email to let me know. Please note that if you requested to have a disc=
+reet contact, I will be calling you from a blocked number to maintain addit=
+ional confidentiality.=C2=A0</p><p><span style=3D"font-family:&quot;system-=
+ui&quot;,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Oxyge=
+n-Sans,Ubuntu,Cantarell,&quot;Helvetica Neue&quot;,Arial,&quot;sans-serif&q=
+uot;">If you have any additional information you wish to provide prior to o=
+ur phone call, you may reply to this email at any time. Thank you and I loo=
+k forward to speaking with you.</span>=C2=A0=C2=A0</p></td><td bgcolor=3D"w=
+hite" style=3D"border-collapse:collapse;width:23.1875px;min-width:10px"></t=
+d><td style=3D"border-collapse:collapse;width:34px;min-width:10px"></td></t=
+r><tr><td style=3D"border-collapse:collapse;width:34px;min-width:10px"></td=
+><td bgcolor=3D"white" style=3D"border-collapse:collapse;width:23.1875px;mi=
+n-width:10px"></td><td colspan=3D"2" bgcolor=3D"white" style=3D"border-coll=
+apse:collapse;font-family:&quot;system-ui&quot;,-apple-system,BlinkMacSyste=
+mFont,&quot;Segoe UI&quot;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&quot;Helvet=
+ica Neue&quot;,Arial,&quot;sans-serif&quot;;font-weight:bold;color:rgb(85,8=
+5,85);font-size:14px;line-height:18px;padding:25px 10px;text-align:center">=
+Do you mind a WhatsApp chat=C2=A0=C2=A0</td><td bgcolor=3D"white" style=3D"=
+border-collapse:collapse;width:23.1875px;min-width:10px"></td><td style=3D"=
+border-collapse:collapse;width:34px;min-width:10px"></td></tr><tr><td style=
+=3D"border-collapse:collapse;width:34px;min-width:10px"></td><td bgcolor=3D=
+"white" style=3D"border-collapse:collapse;width:23.1875px;min-width:10px"><=
+/td><td colspan=3D"2" bgcolor=3D"white" style=3D"border-collapse:collapse;p=
+adding-bottom:40px;text-align:center"><table width=3D"310" style=3D"margin:=
+auto"><tbody><tr><td style=3D"border-collapse:collapse"><a href=3D"http://l=
+inktowhatapp.com" target=3D"_blank" style=3D"color:rgb(104,115,125);border:=
+1px solid rgb(104,115,125);border-radius:4px;display:inline-block;font-fami=
+ly:sans-serif;line-height:40px;text-decoration-line:none;width:180px;margin=
+:0px">=E2=9C=94=C2=A0Yes, close my request</a></td><td style=3D"border-coll=
+apse:collapse"><a href=3D"http://linktowhatapp.com" target=3D"_blank" style=
+=3D"color:rgb(104,115,125);border:1px solid rgb(104,115,125);border-radius:=
+4px;display:inline-block;font-family:sans-serif;line-height:40px;text-decor=
+ation-line:none;width:130px;margin:0px 0px 0px 20px">=E2=9C=98 No</a></td><=
+/tr></tbody></table></td><td bgcolor=3D"white" style=3D"border-collapse:col=
+lapse;width:23.1875px;min-width:10px"></td><td style=3D"border-collapse:col=
+lapse;width:34px;min-width:10px"></td></tr><tr><td colspan=3D"6" height=3D"=
+40" style=3D"border-collapse:collapse">=C2=A0</td></tr></tbody></table><br>=
+<br><p style=3D"color:rgb(68,68,68);font-family:&quot;Lucida Grande&quot;,V=
+erdana,Arial,sans-serif;font-size:12px"><br></p></div>
+
+--000000000000c22dd905f7e78bc4--
